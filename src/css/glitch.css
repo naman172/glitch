@@ -1,0 +1,182 @@
+#glitchBox {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animate_f #logo path:nth-child(2) {
+  stroke-dasharray: 1096.27734375px;
+  stroke-dashoffset: 1096.27734375px;
+  animation: line-animation 1.5s ease forwards 0.6s;
+  animation-play-state: running;
+}
+
+.animate_f #logo path:nth-child(3) {
+  stroke-dasharray: 835.185181px;
+  stroke-dashoffset: 835.185181px;
+  animation: line-animation 1.5s ease forwards 0.9s;
+  animation-play-state: running;
+}
+
+.animate_f #logo path:nth-child(4) {
+  stroke-dasharray: 968.7046508789062px;
+  stroke-dashoffset: 968.7046508789062px;
+  animation: line-animation 1.5s ease forwards 1.2s;
+  animation-play-state: running;
+}
+
+.animate_f #logo path:nth-child(5) {
+  stroke-dasharray: 980.665771px;
+  stroke-dashoffset: 980.665771px;
+  animation: line-animation 1.5s ease forwards 1.5s;
+  animation-play-state: running;
+}
+
+.animate_f #logo path:nth-child(6) {
+  stroke-dasharray: 1214.76416015625px;
+  stroke-dashoffset: 1214.76416015625px;
+  animation: line-animation 1.5s ease forwards 1.8s;
+  animation-play-state: running;
+}
+
+.animate_f #logo path:nth-child(7) {
+  stroke-dasharray: 1445.547119140625px;
+  stroke-dashoffset: 1445.547119140625px;
+  animation: line-animation 1.5s ease forwards 2.1s;
+  animation-play-state: running;
+}
+
+.animate_r #logo path:nth-child(2) {
+  stroke-dasharray: 1096.27734375px;
+  stroke-dashoffset: 1096.27734375px;
+  animation-delay: 1s;
+  animation-play-state: initial;
+}
+
+.animate_r #logo path:nth-child(3) {
+  stroke-dasharray: 835.185181px;
+  stroke-dashoffset: 835.185181px;
+  animation-delay: 1s;
+  animation-play-state: initial;
+}
+
+.animate_r #logo path:nth-child(4) {
+  stroke-dasharray: 968.7046508789062px;
+  stroke-dashoffset: 968.7046508789062px;
+  animation-delay: 1s;
+  animation-play-state: initial;
+}
+
+.animate_r #logo path:nth-child(5) {
+  stroke-dasharray: 980.665771px;
+  stroke-dashoffset: 980.665771px;
+  animation-delay: 1s;
+  animation-play-state: initial;
+}
+
+.animate_r #logo path:nth-child(6) {
+  stroke-dasharray: 1214.76416015625px;
+  stroke-dashoffset: 1214.76416015625px;
+  animation-delay: 1s;
+  animation-play-state: initial;
+}
+
+.animate_r #logo path:nth-child(7) {
+  stroke-dasharray: 1445.547119140625px;
+  stroke-dashoffset: 1445.547119140625px;
+  animation-delay: 1s;
+  animation-play-state: initial;
+}
+
+@keyframes line-animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.glitch_text {
+  color: white;
+  margin: 20px;
+  max-width: 40%;
+  text-align: center;
+  font-size: 1.3em !important;
+}
+
+#post_text {
+  display: unset;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin: 32px;
+  font-size: 1.3em !important;
+}
+
+#secThreeText {
+  display: none;
+}
+
+.glitch_text .MuiTypography-body1,
+#post_text .MuiTypography-body1 {
+  font-size: 1.4rem;
+  font-family: "Roboto Condensed";
+}
+@media (max-width: 1080px) {
+  #post_text .MuiTypography-body1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .glitch_text .MuiTypography-body1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  #post_text .MuiTypography-body1 {
+    font-size: 1rem;
+  }
+  #post_text span {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  #glitchBox {
+    flex-direction: column-reverse;
+  }
+
+  .glitch_text {
+    padding-top: 8vw;
+    max-width: 100%;
+    margin: 0 13%;
+  }
+
+  #post_text {
+    display: none;
+  }
+
+  #secThreeText {
+    display: unset;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-20%);
+  }
+}
+
+@media (max-width: 576px) {
+  #secThreeText {
+    transform: translateY(-50%) translateX(-50%) scale(0.85);
+  }
+}

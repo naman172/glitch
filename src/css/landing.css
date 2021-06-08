@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "honeyScript";
+  src: url("../resources/fonts/honey-script.semibold.ttf");
+}
+
+.carousel-inner {
+  height: inherit;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel-item {
+  height: inherit;
+}
+
+.vertical-slider {
+  scroll-snap-type: y mandatory;
+}
+
+.vertical-slider > .vertical-slide {
+  scroll-snap-align: start;
+}
+
+.vertical-slider::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+#vertical-navdot-container {
+  display: block;
+  top: 50%;
+  transform: translateY(-60%);
+  position: fixed;
+  z-index: 100;
+  left: 3.5%;
+}
+
+.vertical-navdot {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px #fff;
+  cursor: pointer;
+  height: 16px;
+  margin-bottom: 10px;
+  opacity: 0.4;
+  position: relative;
+  width: 16px;
+  box-sizing: border-box;
+}
+
+.vertical-navdot-active {
+  background: #fff;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.carousel-container-div {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authEnter {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 1s;
+  transition-delay: 0.3s;
+}
+.authLeave {
+  background-color: transparent;
+  transition: background-color 1s;
+}
+
+.landing-container {
+  width: 23%;
+  min-width: 275px;
+}
+
+.landing-auth-button Button {
+  width: 100%;
+}
+
+.landing-auth-button button.MuiButton-root {
+  margin-top: 12px;
+  height: 47px;
+  font-size: 1.1em;
+  border: #00b8ff;
+  background: #00b8ff;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+.landing-auth-button button.login-button.MuiButton-root {
+  background: ivory;
+  color: #444;
+}
+
+.secFour button.MuiButton-root {
+  width: 280px;
+  margin-top: 12px;
+  height: 48px;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  outline: none;
+  border-radius: 8px;
+  background: ivory;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.expand {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  color: whitesmoke;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+
+.expand svg {
+  cursor: pointer;
+  transform: rotate(90deg);
+  font-size: 2.2em;
+  transition: all 0.2s;
+}
+
+.expand svg:hover {
+  font-size: 2.5em;
+}
+
+#expandText {
+  transition-duration: 0.5s;
+}
+
+.textShow {
+  opacity: 0;
+}
+
+#up {
+  position: absolute;
+  bottom: 10px;
+  height: 36px;
+  right: 10px;
+  width: 36px !important;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#up.MuiButton-root {
+  min-width: unset;
+}
+
+.secFour {
+  color: whitesmoke;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secFour {
+  font-family: "Roboto Condensed" !important;
+  text-align: center;
+  margin: 0 52px;
+}
+
+.secFour .bigText {
+  font-size: 2.5rem;
+  line-height: 36px;
+}
+
+.secFour .smallText {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 992px) {
+  .secFour .bigText {
+    font-size: 2rem;
+    line-height: 28px;
+  }
+
+  .secFour .smallText {
+    font-size: 1rem;
+  }
+
+  .secFour button.MuiButton-root {
+    width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .secFour .bigText {
+    font-size: 1.75rem;
+  }
+
+  .secFour .smallText {
+    font-size: 1rem;
+  }
+
+  .secFour button.MuiButton-root {
+    width: 180px;
+  }
+}
+
+.secFour .backdrop {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

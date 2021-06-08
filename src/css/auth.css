@@ -1,0 +1,77 @@
+form .MuiFormLabel-root {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.auth-form-container {
+  width: 25%;
+  min-width: 275px;
+}
+
+form .MuiInputBase-root {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+form label.MuiFormLabel-root.Mui-focused {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+form .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.4);
+  width: auto;
+  float: unset;
+}
+
+form .MuiOutlinedInput-notchedOutline legend {
+  width: auto;
+  float: unset;
+}
+
+form Button {
+  width: 100%;
+}
+
+form button.MuiButton-root {
+  margin-top: 8px;
+  height: 46px;
+  font-size: 1.1em;
+  border: #00b8ff;
+  background: #00b8ff;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  outline: none;
+}
+
+form button.MuiButton-root:hover {
+  background-color: #00b8ff;
+}
+
+form Button .MuiCircularProgress-colorPrimary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.invalid-credentials {
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 6px;
+}
+
+form .textField {
+  margin-bottom: 12px;
+}
+
+form .MuiFormHelperText-root.Mui-error {
+  color: rgba(0, 0, 0, 0.54);
+}
