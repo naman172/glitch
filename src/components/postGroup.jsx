@@ -6,21 +6,21 @@ const PostGroup = () => (
       <div className="marquee">
         <div className="pg">
           <img
-            src={process.env.PUBLIC_URL + "./resources/group0.png"}
+            src="./resources/group0.png"
             alt="group0"
           />
           <img
-            src={process.env.PUBLIC_URL + "./resources/group1.png"}
+            src="./resources/group1.png"
             alt="group1"
           />
         </div>
         <div className="pg">
           <img
-            src={process.env.PUBLIC_URL + "./resources/group0.png"}
+            src="./resources/group0.png"
             alt="group0"
           />
           <img
-            src={process.env.PUBLIC_URL + "./resources/group1.png"}
+            src="./resources/group1.png"
             alt="group1"
           />
         </div>
@@ -30,21 +30,21 @@ const PostGroup = () => (
       <div className="marquee">
         <div className="pg">
           <img
-            src={process.env.PUBLIC_URL + "./resources/group1.png"}
+            src="./resources/group1.png"
             alt="group1"
           />
           <img
-            src={process.env.PUBLIC_URL + "./resources/group2.png"}
+            src="./resources/group2.png"
             alt="group2"
           />
         </div>
         <div className="pg">
           <img
-            src={process.env.PUBLIC_URL + "./resources/group1.png"}
+            src="./resources/group1.png"
             alt="group1"
           />
           <img
-            src={process.env.PUBLIC_URL + "./resources/group2.png"}
+            src="./resources/group2.png"
             alt="group2"
           />
         </div>
@@ -54,21 +54,21 @@ const PostGroup = () => (
       <div className="marquee">
         <div className="pg">
           <img
-            src={process.env.PUBLIC_URL + "./resources/group2.png"}
+            src="./resources/group2.png"
             alt="group2"
           />
           <img
-            src={process.env.PUBLIC_URL + "./resources/group0.png"}
+            src="./resources/group0.png"
             alt="group0"
           />
         </div>
         <div className="pg">
           <img
-            src={process.env.PUBLIC_URL + "./resources/group2.png"}
+            src="./resources/group2.png"
             alt="group2"
           />
           <img
-            src={process.env.PUBLIC_URL + "./resources/group0.png"}
+            src="./resources/group0.png"
             alt="group0"
           />
         </div>

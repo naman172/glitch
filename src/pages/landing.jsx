@@ -16,16 +16,16 @@ import ExploreIcon from "@material-ui/icons/Explore";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { Typography } from "@material-ui/core";
 
-import Navbar from "../components/navbar";
-import Login from "../components/login";
-import SignUp from "../components/signUp";
-import Glitch from "../components/glitch";
-import PostGroup from "../components/postGroup";
-import Up from "../components/up";
+import Navbar from "../components/navbar.jsx";
+import Login from "../components/login.jsx";
+import SignUp from "../components/signUp.jsx";
+import Glitch from "../components/glitch.jsx";
+import PostGroup from "../components/postGroup.jsx";
+import Up from "../components/up.jsx";
 
 // Background Image
 import bgImages from "../resources/images.js";
-import NavDotContainer from "../components/navDotContainer";
+import NavDotContainer from "../components/navDotContainer.jsx";
 let bgImg = bgImages[Math.floor(Math.random() * 2)];
 
 export class landing extends Component {
@@ -132,7 +132,7 @@ export class landing extends Component {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              backgroundImage: `url(${process.env.PUBLIC_URL + bgImg})`,
+              backgroundImage: `url(${bgImg})`,
             }}
           >
             <Carousel
@@ -276,7 +276,7 @@ export class landing extends Component {
                 </div>
                 <img
                   id="secThreeText"
-                  src={process.env.PUBLIC_URL + "./resources/groupPost.png"}
+                  src="./resources/groupPost.png"
                   alt="groupPost"
                 />
               </div>
@@ -307,17 +307,17 @@ export class landing extends Component {
               <div
                 className="backdrop"
                 style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL}/resources/bgPatch.png)`,
+                  backgroundImage: `url(/resources/bgPatch.png)`,
                 }}
               ></div>
               <div style={{ zIndex: "2", textShadow: "2px 2px 5px black" }}>
                 <div>
-                  <Typography class="bigText">
+                  <Typography className="bigText">
                     Okay, it’s not actually hard to explain.
                   </Typography>
                 </div>
                 <div>
-                  <Typography class="smallText">
+                  <Typography className="smallText">
                     We lied. But now you understand this thing. So come on in.
                   </Typography>
                 </div>

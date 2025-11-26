@@ -19,10 +19,6 @@ export class login extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    // let userData = {
-    //   email: this.state.email,
-    //   password: this.state.password,
-    // };
   };
 
   render() {

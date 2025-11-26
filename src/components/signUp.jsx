@@ -21,12 +21,6 @@ export class signUp extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    // let newUserData = {
-    //   username: this.state.username,
-    //   email: this.state.email,
-    //   password: this.state.password,
-    //   confirmPassword: this.state.confirmPassword,
-    // };
   };
 
   render() {
